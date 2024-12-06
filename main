@@ -1,0 +1,166 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Roblox Scripts v2.3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Made By EnchantedV4000",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Fisch Hubs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Speed Hub X",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Alchemy Hub",
+	Callback = function()
+loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Black Hub",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FischMain"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Native Hub / Key",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Fisch-native-hub-23463"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Hidden Hub",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tulontop/HiddenRevamp/refs/heads/main/Loader.luau"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Bonk Hub / Key",
+	Callback = function()
+loadstring(game:HttpGet("https://bonkhubloader.netlify.app",true))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Popular Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "This Tab Has Popular games and script on the each game (Not all)"
+})
+
+Tab:AddButton({
+	Name = "Fisch (Speed Hub X)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Blox Fruit (Redz Hub)",
+	Callback = function()    
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Blox Fruit (Cokka Hub / Key)",
+	Callback = function()
+_G.Key = "Your Key"
+loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Murder Mystery 2 (Yarhm)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = " Fisch (Native / key)",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Fisch-native-hub-23463"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Soon!",
+	Callback = function()
+	local message = Instance.new("Message", game.Workspace)
+        message.Text = "Script has stopped script coming soon! (AI GENERATED GUI)"
+        
+        -- Remove the message after 5 seconds
+        wait(4)
+        message:Destroy()
+      		print("button pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "My Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = true
+})
+
+Tab:AddButton({
+	Name = "Universal Scripts",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptGetter/Enchantedv4000/main/Made%20with%20love"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "The Mimic Script (Click To Copy)",
+	Callback = function()
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local function copyToClipboard(text)
+    if setclipboard then
+        setclipboard(text)
+        print("Link copied to clipboard: " .. text)
+    else
+        warn("setclipboard is not available in this environment.")
+    end
+end
+
+-- Example usage
+local link = "loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptGetter/Keyv2/main/Keysystem"))()"
+copyToClipboard(link)
+
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Universal Troll Soon! ",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
